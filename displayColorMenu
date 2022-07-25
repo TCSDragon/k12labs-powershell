@@ -1,0 +1,10 @@
+
+function displayColorMenu() {
+   $promptText = "Enter a number for the color ["
+   for ($i=0; $i -le ($aryColors.Count - 1); $i++) {
+      $promptText += "$i = " + $aryColors[$i] + ", "
+   }
+   $promptText = $promptText.Substring(0,($promptText.Length - 2)) #remove the trailing comma and space
+   $promptText += "]"
+   return $promptText
+}
