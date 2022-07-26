@@ -25,4 +25,5 @@ $t = @"
       }
       Write-Host $t[$i] -NoNewline -ForegroundColor $c
    }
+   Write-Host ""
 }
